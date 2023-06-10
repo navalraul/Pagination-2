@@ -2,18 +2,14 @@ import mongoose from "mongoose";
 import { Schema } from "mongoose";
 
 
-const Product = new Schema({
-    name: String,
+const addProduct = new Schema({
+    
     price: Number,
-    // category: String,
-    image: [String],
+    category: String,
+    brand: String,
+    size: String,
     color: String,
+
 });
 
-const Encrypt = new Schema ({
-    name:String,
-    password:String,
-})
-
-
-export default mongoose.model("Products", Product)
+export default mongoose.model("Product", addProduct)

@@ -1,13 +1,9 @@
-// import mongoose from "mongoose";
-// import { Schema } from "mongoose";
+import mongoose from "mongoose";
+import { Schema } from "mongoose";
 
-// const User = new Schema({
-//     name :  String,
-//     email : String,
-//     password : String,
-//     otp: String,
-//     number: Number,
-//     loginOtp: String,
-// });
+const register = new Schema({
+    email : String,
+    password : String,
+});
 
-// export default mongoose.model("Users",User)
+export default mongoose.model("registers", register)
